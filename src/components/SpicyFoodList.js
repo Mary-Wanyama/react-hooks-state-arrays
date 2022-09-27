@@ -13,20 +13,19 @@ function SpicyFoodList() {
     // console.log(newFood);
   }
 
-  // Adding to the list
-  function handleLiClick(id) {
-    const newFoodArray = foods.map((food) => {
-      if (food.id === id) {
-        return {
-          ...food,
-          heatLevel: food.heatLevel + 1,
-        };
-      } else {
-        return food;
-      }
-    });
-    setFoods(newFoodArray);
-  }
+  // function handleLiClick(id) {
+  //   const newFoodArray = foods.map((food) => {
+  //     if (food.id === id) {
+  //       return {
+  //         ...food,
+  //         heatLevel: food.heatLevel + 1,
+  //       };
+  //     } else {
+  //       return food;
+  //     }
+  //   });
+  //   setFoods(newFoodArray);
+  // }
 
   // Removing Element
   function handleLiClick(id) {
